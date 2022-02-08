@@ -1,0 +1,55 @@
+.header {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: .3rem .5rem .5rem;
+    font-weight: 700;
+    color: #00d772;
+    font-size: 1.4rem;
+    cursor: pointer;
+    background: rgba(3, 166, 118, 0.15);
+    border-radius: .3rem;
+
+    span {
+      &:first-child {
+        margin-bottom: -0.4rem;
+      }
+
+      &:last-child {
+        margin-top: -0.4rem;
+      }
+    }
+  }
+
+  &__icon {
+    width: 1.7rem;
+    height: 1.7rem;
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    background: rgba(3, 166, 118, 0.15);
+    padding: .5rem;
+    border-radius: .3rem;
+
+    span {
+      margin-left: .5rem;
+      font-weight: 700;
+      font-size: 1.5rem;
+      color: blueviolet;
+    }
+
+    small {
+      font-size: 1.1rem;
+      color: mediumseagreen;
+      font-weight: 600;
+    }
+  }
+}

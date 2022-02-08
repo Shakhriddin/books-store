@@ -1,0 +1,97 @@
+.book {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+  margin: 0 -0.5rem;
+  background: rgba(3, 166, 118, 0.1);
+  border-radius: 1rem;
+  transition: all .3s ease-in-out;
+
+  &:hover {
+    box-shadow: 0 0.5rem .7rem .2rem rgba(0, 0, 0, .1);
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+
+  &:hover img {
+    transform: scale(1.1);
+  }
+
+  &__image {
+    width: 170px;
+    height: 185px;
+    padding: 0 .5rem;
+    overflow: hidden;
+    align-self: center;
+
+    img {
+      transition: transform .3s ease-in-out;
+    }
+  }
+
+  &__details {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 .5rem;
+  }
+
+  &__details-body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.21;
+    color: #00d772;
+    margin-bottom: .5rem;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__author {
+    font-weight: 500;
+    margin-bottom: .5rem;
+    font-size: 1.1rem;
+    color: #333333;
+  }
+
+  &__price {
+    font-weight: 700;
+    font-size: 2.2rem;
+    color: blueviolet;
+
+    span {
+      color: #494949;
+      font-size: 1.2rem;
+      font-weight: 500;
+    }
+
+    sup {
+      color: mediumseagreen;
+      font-size: 1.5rem;
+      font-weight: 500;
+    }
+  }
+
+  &__btn {
+    align-self: flex-start;
+    padding: .4rem .7rem .6rem;
+    background: mediumseagreen;
+    color: #f8f8f8;
+    border-radius: .3rem;
+    font-weight: 500;
+    transition: all .2s ease-in-out;
+
+    &:hover {
+      box-shadow: 0 0.2rem .4rem .1rem rgba(0, 0, 0, .3);
+    }
+  }
+}
